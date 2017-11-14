@@ -1,0 +1,40 @@
+<?xml version= “1.0 ?>
+<!DOCTYPE note SYSTEM "pais.dtd">
+	<pais>
+		<españa>
+			<musica>
+				<grupos>
+					 <nombre>Los Chichos</nombre>
+					 <añocomienzo>1958</añocomienzo>
+						<discografia>
+						       <nombre>Con jeros</nombre>
+						       <añolanzamiento>1973</añolanzamiento>
+						</discografia>
+<discografia>
+						       <nombre>Sin jeros</nombre>
+						       <añolanzamiento>1991</añolanzamiento>
+						</discografia>
+				</grupos>
+<grupos>
+					 <nombre>Estopa</nombre>
+					 <añocomienzo>1999</añocomienzo>
+						<discografia>
+						       <nombre>Vinotinto </nombre>
+						       <añolanzamiento>1973</añolanzamiento>
+						</discografia>
+<discografia>
+						       <nombre>Rumba triste</nombre>
+						       <añolanzamiento>1991</añolanzamiento>
+						</discografia>
+				</grupos>
+
+
+
+<!DOCTYPE pais
+[
+<!ELEMENT pais (to,from,heading,body)>
+<!ELEMENT musica (#PCDATA)>
+<!ELEMENT grupos (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
