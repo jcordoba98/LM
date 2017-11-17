@@ -1,0 +1,21 @@
+<menu_almuerzo>
+	<comida>
+		<nombre>Waffies</nombre>
+		<precio>2.00</precio>
+		<descripcion>Waffies baratos de Macdonals</descripcion>
+		<calorias>650</calorias>
+	</comida>
+
+<xs:element name:"comida">
+	<xs:compleType>
+		<xs:requence>
+			<xs:element name="nombre" type="string">
+				<xs pattern value: [A-Z][a-z]
+			<xs:element name="precio" type="integer">
+				<xs pattern value: [$][0-9][0-9][.][0-9]
+			<xs:element name="descripcion" type="string">
+			<xs:element name="calorias" type="integer">
+				<xs pattern value:	[0-9][0-9][0-9][0-9]
+		</xs:element>
+	</xs:element>
+</xs:element>			
