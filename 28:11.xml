@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="marcadores.xsd">
+   <pagina>
+      <nombre>Abrirllave</nombre>
+      <descripcion>Tutoriales de informática.</descripcion>
+      <url>http://www.abrirllave.com/</url>
+   </pagina>
+   <pagina>
+      <nombre>Wikipedia</nombre>
+      <descripcion>La enciclopedia libre.</descripcion>
+      <url>http://www.wikipedia.org/</url>
+   </pagina>
+   <pagina>
+      <nombre>W3C</nombre>
+      <descripcion>World Wide Web Consortium.</descripcion>
+      <url>http://www.w3.org/</url>
+   </pagina>
+</marcadores>
+
+ <xs:element name="marcadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pagina">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="descripcion" type="xs:string"/>
+              <xs:element name="url" type="xs:string"/>
+             </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://www.ejemplos-de-abrirllave.com/</loc>
+      <lastmod>2016-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>http://www.ejemplos-de-abrirllave.com/contactar.html</loc>
+      <lastmod>2016-09-30</lastmod>
+      <priority>0.3</priority>
+   </url>
+   <url>
+      <loc>http://www.ejemplos-de-abrirllave.com/productos/impresora.html</loc>
+      <lastmod>2016-09-30</lastmod>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://www.ejemplos-de-abrirllave.com/productos/monitor.html</loc>
+      <lastmod>2016-09-30</lastmod>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://www.ejemplos-de-abrirllave.com/productos/teclado.html</loc>
+      <lastmod>2016-09-30</lastmod>
+      <priority>0.5</priority>
+   </url>
+</urlset>
+
+
+<xs:element name="urlset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="url">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="loc" type="xs:eniuri"/>
+              <xs:element name="lastmod" type="xs:date"/>
+              <xs:element name="priority" type="xs:float"/>
+             </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
